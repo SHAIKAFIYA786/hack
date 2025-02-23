@@ -248,56 +248,20 @@ h2 {
     margin: 1rem 0;
 }
 
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 1001;
-}
-
-.modal-content {
-    background: white;
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 2rem;
-    border-radius: 10px;
-    position: relative;
-}
-
-.close {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-input, select, textarea {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    background: #64442c;
+    color: white;
+    text-align: center;
+    /* padding: 1rem; */
+}
+/* .footer-container{
+     background: #64442c;
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
+} */
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -1041,136 +1005,6 @@ body.modal-open {
 .problem-card:hover .problem-content {
     opacity: 1;
 }
-/* .roadmap {
-    text-align: center;
-    padding: 50px 20px;
-    background-color:#003366;
-}
-
-.timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    width: 4px;
-    background-color: #0ef;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.timeline-date {
-    background: #0ef;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.timeline-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 45%;
-    position: relative;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-    align-self: flex-start;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-    align-self: flex-end;
-} */
-/* .roadmap {
-    text-align: center;
-    padding: 50px 20px;
-    background-color:#003366;
-}
-
-.roadmap-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.roadmap-step {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 15%;
-    min-width: 150px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.roadmap-step:hover {
-    transform: scale(1.1);
-}
-
-.icon {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.roadmap-step h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.roadmap-step p {
-    font-size: 14px;
-    color: #555;
-}
-
-.roadmap-step span {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #0ef;
-}
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-} */
 .roadmap-section {
     text-align: center;
     padding: 50px 20px;
@@ -1322,4 +1156,157 @@ h2 {
 @keyframes slideUp {
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}
+.form-submit {
+    display: inline-block;
+    padding: 1px 10px;
+    background: #ff6600;  /* Example button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+    background: #e65c00;  /* Darker shade on hover */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-Screen Section */
+.media-section {
+    display: flex;
+    height: 100vh; /* Takes full screen */
+    background: #121212;
+}
+
+/* Main Container */
+.media-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Column - Single Large Image */
+.media-column.left {
+    flex: 1;
+    display: flex;
+}
+
+.media-column.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.media-column.left .top{
+    padding:0px
+}
+/* Center Column - Video */
+.media-column.center {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black; /* Adds contrast */
+}
+
+.media-video {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Right Column - Two Stacked Images */
+.media-column.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-column.right img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    .media-container {
+        flex-direction: column;
+    }
+
+    .media-column {
+        width: 100%;
+        height: auto;
+    }
+
+    .media-video {
+        width: 100%;
+    }
+
+    .media-column.right img {
+        height: 250px;
+    }
+}
+/* Styling for the Gallery Headline */
+.media-column.right h3 {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1.2s ease-in-out, pulseGlow 2.5s infinite alternate;
+    font-family: italic;
+    margin-bottom: 40px;
+}
+
+/* Fade-in & Slide-up Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Soft Glow Pulsing Effect */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+.form-submit {
+    display: inline-block;
+    padding: 1px 20px;
+    background: #ff6600;  /* Example button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+    background: #e65c00;  /* Darker shade on hover */
+} 
+
+.organizer-card a{
+    text-decoration: none;
 }

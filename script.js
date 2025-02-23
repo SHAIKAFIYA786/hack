@@ -287,5 +287,15 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 };
+document.addEventListener("DOMContentLoaded", () => {
+    const boxes = document.querySelectorAll(".box");
+    
+    boxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.style.opacity = "1";
+            box.style.transform = "translateY(0)";
+        }, index * 300);
+    });
+});
 
 

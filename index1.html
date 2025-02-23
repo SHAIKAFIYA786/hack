@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="logo.jpg">
 </head>
 <body>
+    <!-- navbar -->
     <nav>
         <div class="nav-logo">AIgnite</div>
         <ul class="nav-links">
@@ -17,11 +18,17 @@
             <li><a href="#organizers">Organizers</a></li>
             <li><a href="#participate">Participate</a></li>
             <li><a href="#prizes">Prizes</a></li>
-            <li><button onclick="openRegistration()" class="register-btn">Register Now</button></li>
+            <!-- <li><button onclick="openRegistration()" class="register-btn">Register Now</button></li> -->
+            <li>
+                <a href="https://forms.gle/TLt6M4whnBisLM4z9" class="form-submit" target="_blank">
+                    Register
+                </a>
+            </li>
+
 
         </ul>
     </nav>
-
+    <!-- hero content -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>AIgnite Hackathon 2025</h1>
@@ -32,11 +39,13 @@
             <div id="countdown"></div>
         </div>
     </section>
-    
-    <!-- News Ticker (Visible only on home page) -->
+
+    <!-- homepage -->
     <div id="news-ticker" class="news-ticker">
-        <p>🔴 Update: Hackathon registration is now open! | 🏆 Exciting prizes await! | 📅 Event Date: March 8, 2025 | organized by CSE and IIC cell</p>
+        <p>🔴 Update: Hackathon registration is now open! | 🏆 Exciting prizes await! | 📅 Event Date: March 8, 2025 |
+            organized by CSE and IIC cell</p>
     </div>
+    <!-- problem statements -->
     <section id="problems" class="problems">
         <h2>Problem Statements</h2>
         <div class="problem-grid">
@@ -46,12 +55,6 @@
                     <p>Develop innovative AI solutions to improve healthcare.</p>
                 </div>
             </div>
-            <!-- <div class="problem-card" style="background-image: url('ps1.jpg');">
-                <div class="problem-content">
-                    <h3>AI for Healthcare</h3>
-                    <p>Develop innovative AI solutions to improve healthcare diagnosis, treatment, and patient care.</p>
-                </div>
-            </div> -->
             <div class="problem-card" style="background-image: url('ps2.jpg');">
                 <div class="problem-content">
                     <h3>Sustainable AI</h3>
@@ -95,6 +98,7 @@
             <p><strong>Field:</strong> <span id="modalField"></span></p>
         </div>
     </div>
+    <!-- organisers -->
     <section id="organizers" class="organizers">
         <h2>Organizers</h2>
         <div class="organizer-grid">
@@ -120,6 +124,30 @@
             </div>
         </div>
     </section>
+    <!-- organizers duplicate fro services -->
+    <section id="organizers" class="organizers">
+        <h2>Services</h2>
+        <div class="organizer-grid">
+            <div class="organizer-card">
+                <img src="k..jpeg" alt="Tech Corp">
+                <h3>Networking Opportunities</h3>
+                <p>Connect with fellow students, mentors, and potential employers throughout the event.</p>
+            </div>
+            <div class="organizer-card">
+                <img src="k2.jpeg" alt="AI Institute">
+                <h3>Mentorship</h3>
+                <p>Get guidance from industry experts to refine your ideas and enhance your coding skills.</p>
+            </div>
+            <div class="organizer-card">
+                <img src="k3.jpeg" alt="Innovation Hub">
+                <a href="https://forms.gle/v5UmNJ5Vfgxe8Ct26">
+                    <h3>Team Formation</h3>
+                </a>
+                <p>Find and join teams with like-minded peers to create groundbreaking projects.</p>
+            </div>
+        </div>
+    </section>
+    <!-- gallery -->
     <section id="media" class="media-section">
         <div class="media-container">
             <!-- Left Images -->
@@ -127,7 +155,7 @@
                 <img src="img1.jpg" alt="Left Image 1" class="media-image top">
                 <img src="img2.jpg" alt="Left Image 2" class="media-image bottom">
             </div>
-    
+
             <!-- Video in the Middle -->
             <div class="media-column center">
                 <video autoplay loop muted class="media-video">
@@ -135,15 +163,16 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-    
+
             <!-- Right Images -->
             <div class="media-column right">
-                <img src="img3.jpg" alt="Right Image 1" class="media-image top">
+                <h3>Gallery</h3>
+                <!-- <img src="img3.jpg" alt="Right Image 1" class="media-image top"> -->
                 <img src="img4.jpg" alt="Right Image 2" class="media-image bottom">
             </div>
         </div>
     </section>
-    
+<!-- instructions about participation -->
     <section id="participate" class="participate">
         <h2>Why & How to Participate</h2>
         <div class="participate-content">
@@ -159,102 +188,16 @@
             <div class="how-participate animated-section">
                 <h3>How to Participate</h3>
                 <ol>
-                    <li>Register your team (1-4 members)</li>
+                    <li>Register your team (1-6 members)</li>
                     <li>Choose your problem statement</li>
                     <li>Develop your solution</li>
                     <li>Present to judges</li>
+                    <li>unique Dress CodeIs Mandatory</li>
                 </ol>
             </div>
         </div>
     </section>
-    <!-- <section id="roadmap" class="roadmap">
-        <h2>Hackathon Roadmap</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">Day 1 - Morning</div>
-                <div class="timeline-content">
-                    <h3>Hackathon Kickoff</h3>
-                    <p>Welcome speech, problem statement briefing, and team introductions.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Day 1 - Afternoon</div>
-                <div class="timeline-content">
-                    <h3>Development Begins</h3>
-                    <p>Teams start working on their projects with mentor support.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Day 1 - Night</div>
-                <div class="timeline-content">
-                    <h3>Midway Checkpoint</h3>
-                    <p>Progress review and feedback session with mentors.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Day 2 - Morning</div>
-                <div class="timeline-content">
-                    <h3>Final Coding Sprint</h3>
-                    <p>Last-minute refinements, debugging, and polishing the project.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Day 2 - Afternoon</div>
-                <div class="timeline-content">
-                    <h3>Project Submission</h3>
-                    <p>Teams submit their projects before the deadline.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Day 2 - Evening</div>
-                <div class="timeline-content">
-                    <h3>Presentations & Prizes</h3>
-                    <p>Teams present their projects, followed by judging and awards.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- <section id="roadmap" class="roadmap">
-        <h2>Hackathon Roadmap</h2>
-        <div class="roadmap-container">
-            <div class="roadmap-step">
-                <div class="icon">🚀</div>
-                <h3>Kickoff</h3>
-                <p>Welcome speech, problem briefing, and team intro.</p>
-                <span>Day 1 - Morning</span>
-            </div>
-            <div class="roadmap-step">
-                <div class="icon">💻</div>
-                <h3>Development</h3>
-                <p>Teams start working with mentor support.</p>
-                <span>Day 1 - Afternoon</span>
-            </div>
-            <div class="roadmap-step">
-                <div class="icon">🔍</div>
-                <h3>Midway Check</h3>
-                <p>Progress review & feedback session.</p>
-                <span>Day 1 - Night</span>
-            </div>
-            <div class="roadmap-step">
-                <div class="icon">⚡</div>
-                <h3>Final Sprint</h3>
-                <p>Last-minute debugging & improvements.</p>
-                <span>Day 2 - Morning</span>
-            </div>
-            <div class="roadmap-step">
-                <div class="icon">📤</div>
-                <h3>Submission</h3>
-                <p>Teams submit their projects.</p>
-                <span>Day 2 - Afternoon</span>
-            </div>
-            <div class="roadmap-step">
-                <div class="icon">🏆</div>
-                <h3>Presentations</h3>
-                <p>Teams present, judges evaluate, awards given.</p>
-                <span>Day 2 - Evening</span>
-            </div>
-        </div>
-    </section> -->
+    <!-- roadmap of the Hackathon for 2 days -->
     <section id="roadmap" class="roadmap-section">
         <h2>24-Hour Hackathon Roadmap</h2>
         <div class="roadmap-container">
@@ -282,124 +225,26 @@
             </div>
         </div>
     </section>
-    
+<!-- prizes section -->
     <section id="prizes" class="prizes">
         <h2>Prizes</h2>
         <div class="prize-container">
             <div class="prize-box first-prize">
-                <img src="firstprize.jpg"alt="ftrstprize">
-                <!-- <h3>1st Prize</h3> -->
-                <!-- <p>Exciting rewards for the winner!</p> -->
+                <img src="firstprize.jpg" alt="ftrstprize">
             </div>
             <div class="prize-box second-prize">
-                <img src= "second.jpg"alt="Second Prize">
-                <!-- <h3>2nd Prize</h3> -->
-                <!-- <p>Great prizes for the runner-up!</p> -->
+                <img src="second.jpg" alt="Second Prize">
             </div>
             <div class="prize-box third-prize">
                 <img src="third.jpg" alt="Third Prize">
-                <!-- <h3>3rd Prize</h3> -->
-                <!-- <p>Amazing rewards for the third place!</p> -->
             </div>
         </div>
     </section>
-                    <!-- <div id="registrationModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                    
-                            <h2 class="form-title">Team Registration</h2> -->
-                    
-                            <!-- <form id="registrationForm">
-                                <label for="teamName" class="form-label">Team Name:</label>
-                                <input type="text" id="teamName" name="teamName" class="form-input" required>
-                                <label for="teamLeadMobile" class="form-label">Team Lead Mobile Number:</label>
-<input type="tel" id="teamLeadMobile" name="teamLeadMobile" class="form-input" required pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number">
-
-                    
-                                <h3 class="form-subtitle">Team Members (6 members required, at least 1 female)</h3>
-                    
-                                <div id="teamMembers">
-                                   
-                                    <script>
-                                        for (let i = 1; i <= 6; i++) {
-                                            document.write(`
-                                                <div class="member">
-                                                    <label class="form-label">Member ${i} Name:</label>
-                                                    <input type="text" name="member${i}Name" class="form-input" required>
-                    
-                                                    <label class="form-label">Roll Number:</label>
-                                                    <input type="text" name="member${i}Roll" class="form-input" required>
-                    
-                                                    <label class="form-label">Branch:</label>
-                                                    <input type="text" name="member${i}Branch" class="form-input" required>
-                    
-                                                    <label class="form-label">Email:</label>
-                                                    <input type="email" name="member${i}Email" class="form-input" required>
-                    
-                                                    <label class="form-label">Gender:</label>
-                                                    <select name="member${i}Gender" class="form-select" required>
-                                                        <option value="">Select Gender</option>
-                                                        <option value="Male">Male</option>
-                                                        <option value="Female">Female</option>
-                                                        <option value="Other">Other</option>
-                                                    </select>
-                                                </div>
-                                            `);
-                                        }
-                                    </script>
-                                </div>
-                    
-                               
-                                <label for="problemStatement" class="form-label">Problem Statement:</label>
-                                <input type="text" id="problemStatement" name="problemStatement" class="form-input" required>
-                    
-                                <label for="problemDescription" class="form-label">Problem Description:</label>
-                                <textarea id="problemDescription" name="problemDescription" class="form-textarea" required></textarea>
-                    
-                                <button type="submit" class="form-submit">Register</button>
-                            </form> -->
-                        <!-- <div id="registrationModal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <h2 class="form-title">Team Registration</h2>
-                        
-                                
-                                <a href="https://forms.gle/TLt6M4whnBisLM4z9" class="form-submit" target="_blank">
-                                    Register
-                                </a>
-                            </div>
-                        </div> -->
-                        <!-- </div>
-                    </div> -->/
-                    <!-- Modal Structure -->
-<div id="registrationModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 class="form-title">Team Registration</h2>
-
-        <!-- Register button as a direct link -->
-        <a href="https://forms.gle/TLt6M4whnBisLM4z9" class="form-submit" target="_blank">
-            Register
-        </a>
-    </div>
-</div>
-
-<!-- Button to Open Modal -->
-<!-- <button onclick="openRegistration()" class="form-submit">Open Registration</button> -->
-
-                    
-            
-                    <!-- <p id="error-message" style="color: red; display: none;">At least one female member is required!</p>
-                </div>
-            </div>
-            
-        </div>
-    </div> -->
-    
+    <!-- footer -->
     <footer>
-        <p>&copy; 2025 AIginite Hackathon. All rights reserved.</p>
         <div class="footer-container">
             <div class="contact-details">
+                <p>&copy; 2025 AIginite Hackathon. All rights reserved.</p>
                 <p>Phone: +1234567890</p>
                 <p>Principal Email: principal@example.com</p>
                 <p>Organizer Email: organizer@example.com</p>
@@ -408,14 +253,12 @@
             <div class="social-media">
                 <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/cse_deptsvcet?igsh=MXE0Z3plMml0MDdoNA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/cse_deptsvcet?igsh=MXE0Z3plMml0MDdoNA==" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
-    <div class="slogan">Ding Dong.......!<br>
-         Artificial Intelligence is Calling</div>  
-          
-         <script src="script.js"></script>  
+    <script src="script.js"></script>
 </body>
 </html>
